@@ -51,11 +51,9 @@ sudo apt install playerctl
 sudo apt install kitty
 ```
 
-- **Compositor**: For smooth transitions and transparency, install `picom`:
+- **Compositor**: For smooth transitions and transparency, install `picom` [picom](https://github.com/yshui/picom):
 
-```bash
-sudo apt install picom
-```
+
 
 - **Image Viewer**: Install `feh` as the image viewer:
 
