@@ -104,10 +104,8 @@ Please customize and use this i3wm configuration to suit your needs. Enjoy your 
 
 ## Additional Information
 
-For an alternative login manager, you can install `ly` from the [fairyglade/ly GitHub repository](https://github.com/fairyglade/ly). Follow the instructions provided in the repository's README to install and configure it.
+For an alternative login manager, you can install `ly` from the [ly GitHub](https://github.com/fairyglade/ly). Follow the instructions provided in the repository's README to install and configure it.
 
-For "Auto-tiling" functionality, you can explore the `autotiling` project on [GitHub](https://github.com/nwg-piotr/autotiling).
-```
+For "Auto-tiling" functionality, you can explore the `autotiling` project on [autotiling_GitHub](https://github.com/nwg-piotr/autotiling).
 
-I've added a link to the `autotiling` GitHub repository in the "Additional Information" section.
 
