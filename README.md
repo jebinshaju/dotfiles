@@ -1,6 +1,15 @@
+
 # Ubuntu 23.04 i3wm Configuration
 
 This repository contains my personal i3wm configuration for Ubuntu 23.04, along with a collection of useful tools and scripts. It's designed to provide a productive and visually appealing i3wm setup.
+
+![Image 2023-10-02 at 4 49 23 PM](https://github.com/jebinshaju/dotfiles/assets/67820811/4cf3c241-0af1-454f-a754-9d19bbe5d218)
+![Image 2023-10-02 at 4 49 26 PM](https://github.com/jebinshaju/dotfiles/assets/67820811/1094c113-fa5d-43f1-a59d-7f171b602617)
+![Image 2023-10-02 at 4 50 19 PM](https://github.com/jebinshaju/dotfiles/assets/67820811/7b0c638c-c181-4734-89d4-d4c2c5c23b63)
+
+
+https://github.com/jebinshaju/dotfiles/assets/67820811/2e8703b7-1b58-410b-908c-7d08c0392178
+
 
 ## Prerequisites
 
