@@ -8,10 +8,10 @@ Before you can use this configuration, you'll need to install the following depe
 
 ### Window Manager
 
-- **i3wm with Gaps**: This is the window manager we'll be using. Install it with:
+- **i3wm**: This is the window manager we'll be using. Install it with:
 
 ```bash
-sudo apt install i3-gaps
+sudo apt install i3
 ```
 
 ### Basic Utilities
