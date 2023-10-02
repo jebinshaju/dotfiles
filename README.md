@@ -9,6 +9,10 @@ This repository contains my personal i3wm configuration for Ubuntu 23.04, along 
 
 
 
+https://github.com/jebinshaju/dotfiles/assets/67820811/37c76ddb-8fda-4237-9972-e8461dfc977e
+
+
+
 ## Prerequisites
 
 Before you can use this configuration, you'll need to install the following dependencies:
