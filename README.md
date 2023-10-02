@@ -8,8 +8,6 @@ This repository contains my personal i3wm configuration for Ubuntu 23.04, along 
 ![Image 2023-10-02 at 4 50 19 PM](https://github.com/jebinshaju/dotfiles/assets/67820811/7b0c638c-c181-4734-89d4-d4c2c5c23b63)
 
 
-https://github.com/jebinshaju/dotfiles/assets/67820811/2e8703b7-1b58-410b-908c-7d08c0392178
-
 
 ## Prerequisites
 
