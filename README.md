@@ -92,6 +92,11 @@ chmod +x /path/to/battery_warning.sh
 chmod +x /path/to/set_wallpaper.sh
 /path/to/set_wallpaper.sh
 ```
+- **Wallpaper Setting Script**: The `90-touchpad.conf`  make double tap on touchpad possible:
+
+```bash
+/etc/X11/xorg.conf.d/90-touchpad.conf
+```
 
 ## Usage
 
