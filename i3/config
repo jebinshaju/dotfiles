@@ -59,7 +59,7 @@ bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +10% # increa
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 10%- # decrease screen brightness
 
 # kill focused window
-bindsym $mod+Shift+q kill
+bindsym $mod+0xff08 kill
 bindsym $mod+q kill
 
 # start dmenu (a program launcher)
@@ -397,9 +397,9 @@ exec_always picom --experimental-backends --backend glx
 exec --no-startup-id diodon
 
 # Open Google Chrome with Mod+Shift
-bindsym $mod+Shift+z exec google-chrome-stable
+bindsym $mod+0xffe2 exec google-chrome-stable
 bindsym $mod+z exec google-chrome-stable
-bindsym $mod+Shift+x exec nautilus
+bindsym $mod+0x5c exec nautilus
 bindsym $mod+x exec nautilus
 bindsym $mod+p exec xrandr --output HDMI-1-0 --mode 1920x1080
 
@@ -411,12 +411,16 @@ bindsym $mod+c exec diodon
 
 exec_always --no-startup-id autotiling
 
-exec --no-startup-id watch -n 300 /home/jebinshaju/.config/i3/battery_warning.sh
+# exec --no-startup-id watch -n 30 /home/jebinshaju/.config/i3/battery_warning.sh
 
 bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 # exec-startup-id kitty -e tty-clock -sct -f "%a, %d %b %Y %T %z"
+
+bindsym Ctrl+Shift+t exec /home/jebinshaju/.config/normcap/NormCap-0.4.4-x86_64.AppImage
+
+bindsym Ctrl+Shift+a exec /usr/local/android-studio/bin/studio.sh
 
 
