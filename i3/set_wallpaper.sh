@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Directory containing your wallpaper images
-wallpaper_dir="/home/jebinshaju/Pictures/acar"
+wallpaper_dir="/home/jebinshaju/.config/i3/acar"
 
 # Set the initial wallpaper
 feh --bg-fill --randomize "$wallpaper_dir"/*
