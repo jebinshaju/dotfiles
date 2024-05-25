@@ -9,7 +9,6 @@ This repository contains my personal i3wm configuration for debian 12, along wit
 
 
 
-https://github.com/jebinshaju/dotfiles/assets/67820811/37c76ddb-8fda-4237-9972-e8461dfc977e
 
 
 
