@@ -37,7 +37,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- ly --nofork
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
-exec --no-startup-id nm-applet
+exec_always --no-startup-id nm-applet
 
 # Use pactl to adjust volume in PulseAudio.
 # Increase audio volume and send a notification with current volume
@@ -63,7 +63,8 @@ floating_modifier $mod
 tiling_drag modifier titlebar
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec gnome-terminal
+
 
 
 # Sreen brightness controls
@@ -214,23 +215,25 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        status_command i3status
-        i3bar_command i3bar 
-        separator_symbol " | "
-        tray_padding 4
-        
-    colors {
-    background #282A36
-    statusline #F8F8F2
-    separator  #44475A
+    status_command /home/jebin/.config/i3/i3status_with_uptime.sh
+    
+    i3bar_command i3bar
+    separator_symbol " | "
+    tray_padding 4
 
-    focused_workspace  #44475A #44475A #F8F8F2
-    active_workspace   #282A36 #44475A #F8F8F2
-    inactive_workspace #282A36 #282A36 #BFBFBF
-    urgent_workspace   #FF5555 #FF5555 #F8F8F2
-    binding_mode       #FF5555 #FF5555 #F8F8F2
-  }
+    colors {
+        background #282A36
+        statusline #F8F8F2
+        separator  #44475A
+
+        focused_workspace  #44475A #44475A #F8F8F2
+        active_workspace   #282A36 #44475A #F8F8F2
+        inactive_workspace #282A36 #282A36 #BFBFBF
+        urgent_workspace   #FF5555 #FF5555 #F8F8F2
+        binding_mode       #FF5555 #FF5555 #F8F8F2
+    }
 }
+
 
 
 
@@ -432,7 +435,7 @@ bindsym Ctrl+Shift+Print exec --no-startup-id sh -c 'maim --select | xclip -sele
 exec_always xrandr --output eDP-1 --mode 1920x1080 --rate 144
 
 # Display Wallpaper
-# exec_always feh --bg-fill /home/jebinshaju/josefin-WS5yjFjycNY-unsplash.jpg
+# exec_always feh --bg-fill /home/jebin/josefin-WS5yjFjycNY-unsplash.jpg
 
 exec_always picom -b --experimental-backends --backend glx --animations --animation-for-open-window zoom
 
@@ -445,11 +448,11 @@ exec --no-startup-id diodon
 # Open Google Chrome with Mod+Shift
 bindsym $mod+0xffe2 exec google-chrome-stable
 bindsym $mod+z exec google-chrome-stable
-bindsym $mod+0x5c exec thunar
+bindsym $mod+0x5c exec nautilus
 bindsym $mod+x exec thunar
 bindsym $mod+p exec xrandr --output HDMI-1-0 --mode 1920x1080
 
-exec_always /home/jebinshaju/.config/i3/set_wallpaper.sh
+exec_always /home/jebin/.config/i3/set_wallpaper.sh
 
 bindsym XF86Calculator exec gnome-calculator
 bindsym XF86Launch2 exec kitty -e alsamixer
@@ -457,15 +460,15 @@ bindsym $mod+c exec diodon
 exec_always --no-startup-id autotiling
 
 
-exec --no-startup-id watch -n 30 /home/jebinshaju/.config/i3/battery_warning.sh
-
+exec --no-startup-id watch -n 30 /home/jebin/.config/i3/battery_warning.sh
+exec systemctl --user start dunst
 bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 # exec-startup-id kitty -e tty-clock -sct -f "%a, %d %b %Y %T %z"
 
-bindsym Ctrl+Shift+t exec /home/jebinshaju/.config/normcap/NormCap-0.4.4-x86_64.AppImage
+bindsym Ctrl+Shift+t exec /home/jebin/.config/normcap/NormCap-0.4.4-x86_64.AppImage
 
 bindsym Ctrl+Shift+a exec /mnt/mydrive/DEV/android-studio/bin/studio.sh
 
